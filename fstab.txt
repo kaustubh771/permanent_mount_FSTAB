@@ -1,0 +1,13 @@
+Create Volume ebs
+attach it to instance in available state 
+access instance
+mount the volume       sudo mount -t ext4 /dev/xvdb /mnt
+file system            sudo file -s /dev/xvdb
+list lsblk get the UUID Of the partition
+vim /etc/fstab         
+UUID=7434c1d8-2c29-46bf-a9b0-a700adf0da55       /mnt    ext4    defaults        0       0
+
+done!
+
+
+
